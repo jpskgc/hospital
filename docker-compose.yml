@@ -1,0 +1,12 @@
+version: '3'
+services:
+  client:
+    command: 'npm start --host 0.0.0.0 --port 3000'
+    build:
+      dockerfile: Dockerfile
+      context: ./client
+    ports:
+      - '3000:3000'
+    volumes:
+      - /app/node_modules
+      - ./client:/app
