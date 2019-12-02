@@ -1,5 +1,5 @@
 import React from 'react';
 
-export default function App() {
+export default function Demo() {
   return <div className="reactApp">HELLO</div>;
 }
