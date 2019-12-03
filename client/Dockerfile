@@ -1,7 +1,9 @@
 FROM node:alpine
-WORKDIR '/app'
-COPY ./package.json ./
+
+RUN mkdir -p /app
+COPY . /app
+WORKDIR /app
 RUN npm install
-COPY . .
-EXPOSE 3000
-RUN npm start
+
+EXPOSE 3000/tcp
+CMD ["npm", "start"]
