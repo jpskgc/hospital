@@ -1,13 +1,13 @@
 import React, {FC} from 'react';
 import {Route, Switch} from 'react-router';
-import Demo from './components/Demo';
+import Detail from './components/Detail';
 import Bar from './components/Bar';
 
 const App: FC = () => (
   <>
     <Bar />
     <Switch>
-      <Route path="/" exact component={Demo} />
+      <Route path="/" exact component={Detail} />
     </Switch>
   </>
 );

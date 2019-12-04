@@ -26,11 +26,13 @@
   "dependencies": {
     "@material-ui/core": "^4.7.1",
     "@material-ui/icons": "^4.5.1",
+    "@material-ui/lab": "^4.0.0-alpha.34",
     "@types/react": "^16.9.13",
     "@types/react-dom": "^16.9.4",
     "@types/react-router": "^5.1.3",
     "@types/react-router-dom": "^5.1.3",
     "react-router": "^5.1.2",
-    "react-router-dom": "^5.1.2"
+    "react-router-dom": "^5.1.2",
+    "typeface-roboto": "0.0.75"
   }
 }
