@@ -12,7 +12,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function Detail() {
+export default function Header() {
   const [value, setValue] = React.useState(2);
 
   const classes = useStyles();
