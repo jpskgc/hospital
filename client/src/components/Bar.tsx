@@ -168,7 +168,7 @@ export default function Bar() {
   return (
     <div className={classes.grow}>
       <AppBar position="static">
-        <Container fixed>
+        <Container maxWidth="md">
           <Toolbar>
             <IconButton
               edge="start"

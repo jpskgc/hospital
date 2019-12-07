@@ -17,7 +17,7 @@ export default function Header() {
 
   const classes = useStyles();
   return (
-    <Container fixed>
+    <Container maxWidth="md">
       <Box component="fieldset" mb={3} borderColor="transparent">
         <Typography variant="h5" gutterBottom>
           墨東病院

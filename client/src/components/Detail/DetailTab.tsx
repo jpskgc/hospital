@@ -114,7 +114,7 @@ export default function DetailTab() {
   };
 
   return (
-    <Container fixed>
+    <Container maxWidth="md">
       <div className={classes.root}>
         <div className={classes.demo1}>
           <AntTabs
