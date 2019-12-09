@@ -3,6 +3,7 @@ import Header from './Header';
 import Tab from './DetailTab';
 import Chart from './Chart';
 import CategoryGrid from './CategoryGrid';
+import SymptomsGrid from './SymptomsGrid';
 
 const App: FC = () => (
   <>
@@ -10,6 +11,7 @@ const App: FC = () => (
     <Tab />
     <Chart />
     <CategoryGrid />
+    <SymptomsGrid />
   </>
 );
 
