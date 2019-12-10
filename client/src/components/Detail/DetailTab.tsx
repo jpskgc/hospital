@@ -8,7 +8,6 @@ import {
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
-import {Container} from '@material-ui/core';
 
 const AntTabs = withStyles({
   root: {
@@ -114,21 +113,15 @@ export default function DetailTab() {
   };
 
   return (
-    <Container maxWidth="md">
-      <div className={classes.root}>
-        <div className={classes.demo1}>
-          <AntTabs
-            value={value}
-            onChange={handleChange}
-            aria-label="ant example"
-          >
-            <AntTab label="Top" />
-            <AntTab label="Tab 2" />
-            <AntTab label="Tab 3" />
-          </AntTabs>
-          <Typography className={classes.padding} />
-        </div>
+    <div className={classes.root}>
+      <div className={classes.demo1}>
+        <AntTabs value={value} onChange={handleChange} aria-label="ant example">
+          <AntTab label="Top" />
+          <AntTab label="Tab 2" />
+          <AntTab label="Tab 3" />
+        </AntTabs>
+        <Typography className={classes.padding} />
       </div>
-    </Container>
+    </div>
   );
 }

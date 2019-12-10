@@ -1,5 +1,4 @@
 import React from 'react';
-import {Container} from '@material-ui/core';
 import {
   RadarChart,
   PolarGrid,
@@ -42,7 +41,7 @@ const data = [
     fullMark: 5,
   },
   {
-    subject: '退院後アフターケア 3.0',
+    subject: '退院後ケア 3.0',
     A: 3,
     fullMark: 5,
   },
@@ -53,11 +52,11 @@ export default function Chart() {
 
   const classes = useStyles();
   return (
-    <Container maxWidth="md">
+    <>
       <Typography>患者による病院評価スコア</Typography>
       <div className={classes.head}>
         <Box component="fieldset" mb={3} borderColor="transparent">
-          <RadarChart outerRadius={90} width={530} height={250} data={data}>
+          <RadarChart outerRadius={90} width={400} height={250} data={data}>
             <PolarGrid />
             <PolarAngleAxis dataKey="subject" />
             <PolarRadiusAxis angle={2} domain={[0, 5]} />
@@ -81,6 +80,6 @@ export default function Chart() {
           </div>
         </Box>
       </div>
-    </Container>
+    </>
   );
 }

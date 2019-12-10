@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme: Theme) =>
 export default function CategoryGrid() {
   const classes = useStyles();
   return (
-    <Container maxWidth="md">
+    <>
       <Typography>カテゴリ別の患者クチコミ</Typography>
       <div className={classes.root}>
         <Grid container spacing={1}>
@@ -70,6 +70,6 @@ export default function CategoryGrid() {
           </Grid>
         </Grid>
       </div>
-    </Container>
+    </>
   );
 }
