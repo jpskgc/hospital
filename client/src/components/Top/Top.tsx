@@ -1,11 +1,12 @@
 import React from 'react';
 import {Container} from '@material-ui/core';
+import Header from './Header';
 
 export default function Top() {
   return (
     <>
       <React.Fragment>
-        <Container maxWidth="md"></Container>
+        <Header />
       </React.Fragment>
     </>
   );

@@ -1,5 +1,4 @@
 import React from 'react';
-import {Container} from '@material-ui/core';
 import Typography from '@material-ui/core/Typography';
 import {makeStyles, createStyles, Theme} from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
