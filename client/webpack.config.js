@@ -1,12 +1,12 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require ('path');
+const HtmlWebpackPlugin = require ('html-webpack-plugin');
 
 module.exports = {
   mode: 'development',
 
   entry: './src/index.tsx',
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve (__dirname, 'dist'),
     filename: 'bundle.js',
   },
 
@@ -14,6 +14,7 @@ module.exports = {
     port: '3000',
     hot: true,
     open: true,
+    historyApiFallback: true,
   },
   module: {
     rules: [
@@ -30,7 +31,7 @@ module.exports = {
     ],
   },
   plugins: [
-    new HtmlWebpackPlugin({
+    new HtmlWebpackPlugin ({
       template: './src/index.html',
     }),
   ],

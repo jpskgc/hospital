@@ -1,4 +1,4 @@
-import React, {FC} from 'react';
+import React from 'react';
 import Header from './Header';
 import Tab from './DetailTab';
 import Chart from './Chart';
@@ -7,11 +7,13 @@ import SymptomsGrid from './SymptomsGrid';
 import SideBar from './SideBar';
 import Grid from '@material-ui/core/Grid';
 import {Container} from '@material-ui/core';
+import Bar from '../common/Bar';
 
 export default function Detail() {
   return (
     <>
       <React.Fragment>
+        <Bar />
         <Container maxWidth="md">
           <Header />
           <Tab />

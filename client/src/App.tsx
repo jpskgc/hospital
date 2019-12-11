@@ -1,14 +1,14 @@
 import React, {FC} from 'react';
 import {Route, Switch} from 'react-router';
 import Detail from './components/Detail/Detail';
-import Bar from './components/Bar';
-import Footer from './components/Footer';
+import Top from './components/Top/Top';
+import Footer from './components/common/Footer';
 
-const App: FC = () => (
+const App: FC<{}> = () => (
   <>
-    <Bar />
     <Switch>
-      <Route path="/" exact component={Detail} />
+      <Route path="/detail" exact component={Detail} />
+      <Route path="/" exact component={Top} />
     </Switch>
     <Footer />
   </>
