@@ -14,6 +14,7 @@ const useStyles = makeStyles(theme => ({
     backgroundColor: '#3f51b5',
     padding: theme.spacing(8, 0, 6),
     color: theme.palette.common.white,
+    marginBottom: 25,
   },
   search: {
     position: 'relative',
