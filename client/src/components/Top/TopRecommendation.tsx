@@ -28,6 +28,9 @@ const useStyles = makeStyles({
   recommendationName: {
     marginBottom: 10,
   },
+  root: {
+    marginBottom: 15,
+  },
 });
 
 export default function TopRecommendation() {
@@ -36,7 +39,12 @@ export default function TopRecommendation() {
 
   return (
     <Container component="main" maxWidth="md">
-      <Grid container spacing={1} alignItems="flex-end">
+      <Grid
+        container
+        spacing={1}
+        alignItems="flex-end"
+        className={classes.root}
+      >
         <Grid item xs={10} md={2}>
           <CardActionArea component="a" href="#">
             <Card className={classes.card}>
